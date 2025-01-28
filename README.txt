@@ -16,7 +16,4 @@ Este projeto é uma Pókedex, uma aplicação que permite visualizar informaçõ
 
 # Como Executar
 
-Clone o repositório:
-
-# Instale as dependências utilizando o Maven: (Precisa ter o maven instalado e adicionado nas variaveis de sistema (maeven é um gerenciador de pacote)...) e execute na IDE de preferencia
-# Classe principal é o App
+Como esse ja vem com a lib, so precisa executar o app
