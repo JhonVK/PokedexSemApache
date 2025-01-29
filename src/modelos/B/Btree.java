@@ -47,10 +47,10 @@ public class Btree{
         if(no.isfolha()){
             while (i>=0 && pokemon.getBaseExperience()<no.getKeys().get(i).getBaseExperience()) {
                 no.getKeys().add(i+1, no.getKeys().get(i));
-                no.getKeys().remove(i); //duplicamos e removemos para manter a ordem(confuso usei como base codigo do geeksforgeeks)
+                no.getKeys().remove(i); //aqui jogamos o elemento para a direita (para inserir o novo)
                 i--;
             }
-            no.getKeys().add(i+1, pokemon);
+            no.getKeys().add(i+1, pokemon); //inserimos o novo elemento na posição correta
         }else{//caso nao seja folha
             while(i>=0 && pokemon.getBaseExperience()<no.getKeys().get(i).getBaseExperience()){
                 i--;

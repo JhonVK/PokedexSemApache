@@ -42,9 +42,9 @@ public class Pokemon {
         for(int k=0; k<3; k++){
             System.out.println("Movimento "+(k+1)+": "+getMoves().get(k).getMove().getName());
         }
-        try {
+        try{
             Desktop.getDesktop().browse(new URI(getSprites().getFront_default()));
-        } catch (Exception e) {
+        }catch (Exception e) {
             System.out.println("Erro ao abrir a imagem: " + e.getMessage());
 }
         System.out.println("\n");
